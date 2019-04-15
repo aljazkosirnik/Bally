@@ -1,0 +1,171 @@
+@import "colors";
+@import "accordion";
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: $dark;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $light;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h3 {
+  color: $light;
+  font-weight: 300;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #d3d3d3 1px solid;
+  padding: 1rem;
+
+  &-right {
+    width: 35%;
+    height: 100%;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0.4rem 0 0;
+      list-style: none;
+      color: $light;
+      font-weight: 300;
+    }
+  }
+}
+
+.breadcrumbs {
+  padding: 1.5rem 2rem 0;
+  font-size: 0.85rem;
+
+  a {
+    color: $dark;
+  }
+
+  span {
+    padding: 0 0.6rem;
+  }
+}
+
+.product {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+  svg {
+    position: absolute;
+    left: 25%;
+    top: 20%;
+    z-index: -1;
+  }
+
+  #myMenu {
+    margin: 9rem auto;
+    width: 15%;
+    list-style: none;
+    padding: 0 0 0 1rem;
+
+    img {
+      width: 100%;
+    }
+
+    li {
+      margin: 1rem auto;
+
+      &:hover {
+        background: #f7f7f7;
+      }
+    }
+  }
+
+  .slider {
+    width: 60%;
+    margin: -5rem 4rem;
+    z-index: -1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .right-side {
+    width: 25%;
+    margin-top: 5rem;
+    padding: 1rem;
+
+    .header {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+
+      h1 {
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 0;
+      }
+    }
+
+    .size {
+      background: #fff;
+      border: 1px solid $dark;
+
+      &-panel {
+        margin-top: 1rem;
+        line-height: 2rem;
+
+        a {
+          border: 1px solid $light;
+          padding: 0.3rem;
+          margin: 0 0.2rem;
+          width: 100%;
+
+          &:nth-of-type(2) {
+            padding: 0.3rem 0.4rem;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      margin: 0 auto 1.5rem;
+
+      a {
+        color: #fff;
+        display: block;
+        padding: 1rem 0;
+        width: 100%;
+        margin: 0.5rem auto;
+        background: $red;
+        border: none;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      #white {
+        background: #fff;
+        border: 1px solid $dark;
+        color: $dark;
+      }
+    }
+    h4 {
+      font-weight: 300;
+      color: $light;
+    }
+  }
+}

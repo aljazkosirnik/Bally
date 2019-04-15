@@ -1,0 +1,235 @@
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: #fff;
+  color: #8e9091;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid #8e9091;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  line-height: 1rem;
+  margin: 0.3rem auto;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-accordion,
+.accordion:hover {
+  background-color: #e6e4e4;
+}
+
+.accordion:after {
+  content: "+";
+  color: #8e9091;
+  float: right;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.active-accordion:after {
+  content: "-";
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel ul {
+  color: #8e9091;
+  font-size: 0.8rem;
+  margin-top: -1rem;
+}
+
+:root {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: #171717;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #8e9091;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h3 {
+  color: #8e9091;
+  font-weight: 300;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: #d3d3d3 1px solid;
+  padding: 1rem;
+}
+
+.nav-right {
+  width: 35%;
+  height: 100%;
+}
+
+.nav-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0.4rem 0 0;
+  list-style: none;
+  color: #8e9091;
+  font-weight: 300;
+}
+
+.breadcrumbs {
+  padding: 1.5rem 2rem 0;
+  font-size: 0.85rem;
+}
+
+.breadcrumbs a {
+  color: #171717;
+}
+
+.breadcrumbs span {
+  padding: 0 0.6rem;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+}
+
+.product svg {
+  position: absolute;
+  left: 25%;
+  top: 20%;
+  z-index: -1;
+}
+
+.product #myMenu {
+  margin: 9rem auto;
+  width: 15%;
+  list-style: none;
+  padding: 0 0 0 1rem;
+}
+
+.product #myMenu img {
+  width: 100%;
+}
+
+.product #myMenu li {
+  margin: 1rem auto;
+}
+
+.product #myMenu li:hover {
+  background: #f7f7f7;
+}
+
+.product .slider {
+  width: 60%;
+  margin: -5rem 4rem;
+  z-index: -1;
+}
+
+.product .slider img {
+  width: 100%;
+}
+
+.product .right-side {
+  width: 25%;
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.product .right-side .header {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.product .right-side .header h1 {
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.product .right-side .size {
+  background: #fff;
+  border: 1px solid #171717;
+}
+
+.product .right-side .size-panel {
+  margin-top: 1rem;
+  line-height: 2rem;
+}
+
+.product .right-side .size-panel a {
+  border: 1px solid #8e9091;
+  padding: 0.3rem;
+  margin: 0 0.2rem;
+  width: 100%;
+}
+
+.product .right-side .size-panel a:nth-of-type(2) {
+  padding: 0.3rem 0.4rem;
+}
+
+.product .right-side .buttons {
+  margin: 0 auto 1.5rem;
+}
+
+.product .right-side .buttons a {
+  color: #fff;
+  display: block;
+  padding: 1rem 0;
+  width: 100%;
+  margin: 0.5rem auto;
+  background: #611503;
+  border: none;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.product .right-side .buttons #white {
+  background: #fff;
+  border: 1px solid #171717;
+  color: #171717;
+}
+
+.product .right-side h4 {
+  font-weight: 300;
+  color: #8e9091;
+}
+/*# sourceMappingURL=style.css.map */
