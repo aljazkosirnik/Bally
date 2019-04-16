@@ -1,0 +1,59 @@
+@-webkit-keyframes slide-top {
+  0% {
+    top: 100%;
+  }
+
+  60% {
+    top: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    top: 100%;
+  }
+
+  60% {
+    top: 0%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-top-logo {
+  0% {
+    top: 100%;
+  }
+
+  60% {
+    top: 50%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-top-logo {
+  0% {
+    top: 100%;
+  }
+
+  60% {
+    top: 50%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

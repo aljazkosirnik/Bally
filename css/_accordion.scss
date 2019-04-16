@@ -1,0 +1,51 @@
+@import "colors";
+@import "mixins";
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background: #fff;
+  color: $light;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid $light;
+  transition: 0.4s;
+  line-height: 1rem;
+  margin: 0.3rem auto;
+  transition: 0.5s all ease-in-out;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active-accordion,
+.accordion:hover {
+  background-color: rgb(230, 228, 228);
+}
+
+.accordion:after {
+  content: "+";
+  color: $light;
+  float: right;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+.active-accordion:after {
+  content: "-";
+}
+
+/* Style the accordion panel. */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  ul {
+    color: $light;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+  }
+}

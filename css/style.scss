@@ -1,0 +1,101 @@
+@import "colors";
+@import "accordion";
+@import "animations";
+
+:root {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: $dark;
+  margin: 0;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: $light;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h3 {
+  color: $light;
+  font-weight: 300;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.loading {
+  div {
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    background: #ecc79d;
+    -webkit-animation: slide-top 3s 1s;
+    animation: slide-top 3s 1s;
+  }
+
+  svg {
+    width: 40%;
+    height: 40%;
+    @include absCenter();
+    opacity: 0;
+
+    -webkit-animation: slide-top-logo 4s;
+    animation: slide-top-logo 4s;
+  }
+}
+
+.content {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #d3d3d3 1px solid;
+  padding: 1rem;
+
+  &-right {
+    width: 35%;
+    height: 100%;
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0.4rem 0 0;
+      list-style: none;
+      color: $light;
+      font-weight: 300;
+    }
+  }
+}
+
+.display {
+  .top {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 1rem auto;
+
+    img {
+      height: 100%;
+      width: 30%;
+    }
+  }
+
+  &-woman {
+  }
+
+  &-man {
+  }
+}
