@@ -6,10 +6,10 @@ if (smallScreen.matches) {
   slider.innerHTML =
     '<div class="glide"><div class="glide__track" data-glide-el="track">' +
     '<ul class="glide__slides">' +
-    '<li class="glide__slide" id="slide1"><img src="/gasko/img/Trainers_GASKO_007D.png" alt="Trainer image" /></li>' +
-    '<li class="glide__slide" id="slide2"><img src="/gasko/img/Trainers_GASKO_007E.png" alt="Trainer image" /></li>' +
-    '<li class="glide__slide" id="slide3"><img src="/gasko/img/Trainers_GASKO_007F.png" alt="Trainer image" /></li>' +
-    '<li class="glide__slide" id="slide4"><img src="/gasko/img/Trainers_GASKO_007S.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/EMME_1.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/EMME_2.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/EMME_3.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/EMME_4.png" alt="Trainer image" /></li>' +
     "</ul>";
   new Glide(".glide").mount();
 }

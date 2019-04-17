@@ -6,10 +6,9 @@ if (smallScreen.matches) {
   slider.innerHTML =
     '<div class="glide"><div class="glide__track" data-glide-el="track">' +
     '<ul class="glide__slides">' +
-    '<li class="glide__slide" id="slide1"><img src="/gasko/img/Trainers_GASKO_007D.png" alt="Trainer image" /></li>' +
-    '<li class="glide__slide" id="slide2"><img src="/gasko/img/Trainers_GASKO_007E.png" alt="Trainer image" /></li>' +
-    '<li class="glide__slide" id="slide3"><img src="/gasko/img/Trainers_GASKO_007F.png" alt="Trainer image" /></li>' +
-    '<li class="glide__slide" id="slide4"><img src="/gasko/img/Trainers_GASKO_007S.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/SARKIS_1.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/SARKIS_2.png" alt="Trainer image" /></li>' +
+    '<li class="glide__slide" id="slide1"><img src="./img/SARKIS_3.png" alt="Trainer image" /></li>' +
     "</ul>";
   new Glide(".glide").mount();
 }
@@ -18,7 +17,7 @@ else {
   new fullpage("#fullpage", {
     autoScrolling: true,
     controlArrows: true,
-    anchors: ["slide1", "slide2", "slide3", "slide4"],
+    anchors: ["slide1", "slide2", "slide3"],
     menu: "#myMenu"
   });
 

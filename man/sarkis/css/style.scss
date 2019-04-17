@@ -120,36 +120,34 @@ button:focus {
 
     @include respond(tablet) {
       @include absCenter;
-      top: 29%;
+      top: 35%;
       width: 40%;
     }
 
     @include respond(phone) {
       @include absCenter;
-      top: 30%;
+      top: 35%;
       width: 50%;
     }
   }
 
   #myMenu {
-    margin: 9rem auto;
+    margin: 1rem auto;
     width: 15%;
     list-style: none;
     padding: 0 0 0 1rem;
 
     @include respond(laptop) {
-      margin: 7rem auto;
+      margin: 2rem auto;
     }
 
     @include respond(tablet) {
-      margin: 1rem auto;
       width: 70%;
       display: flex;
       order: 2;
     }
 
     @include respond(phone) {
-      margin: 1rem auto;
       width: 70%;
       display: flex;
       order: 2;
@@ -177,16 +175,6 @@ button:focus {
       width: 100%;
       margin: 0;
       z-index: 1;
-
-      #slide1,
-      #slide2 {
-        padding-top: 2rem;
-      }
-
-      #slide3,
-      #slide4 {
-        padding-top: 5rem;
-      }
     }
 
     @include respond(phone) {
@@ -196,18 +184,16 @@ button:focus {
     }
 
     img {
-      width: 100%;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
 
       @include respond(tablet) {
         width: 70%;
-        display: block;
-        margin: 0 auto;
       }
 
       @include respond(phone) {
         width: 70%;
-        display: block;
-        margin: 0 auto;
       }
     }
   }

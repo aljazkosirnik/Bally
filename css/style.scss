@@ -59,6 +59,10 @@ button:focus {
   display: none;
 }
 
+.padding {
+  padding: 3rem;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -86,16 +90,193 @@ button:focus {
     justify-content: space-between;
     width: 70%;
     margin: 1rem auto;
+    border: solid 4rem #deafac;
+    background: #deafac;
 
     img {
       height: 100%;
-      width: 30%;
+      width: 40%;
+      z-index: 1;
+    }
+
+    .text {
+      background: #f1efea;
+      z-index: 0;
+      height: 55vh;
+      margin: auto 0 auto -3rem;
+      padding-left: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-family: "Vollkorn", serif;
+        color: $red;
+        height: 10%;
+      }
+
+      h3 {
+        color: $red;
+        border-top: 1px solid #d19d9a;
+        padding-top: 2rem;
+        margin-top: 1rem;
+        width: 80%;
+        height: 30%;
+      }
     }
   }
 
+  //Display-woman for animation
   &-woman {
+    .top {
+      img {
+        opacity: 0;
+        -webkit-animation: slide-woman-image 2s 1s;
+        animation: slide-woman-image 2s 1s;
+        animation-fill-mode: forwards;
+      }
+
+      h1,
+      h3 {
+        opacity: 0;
+        -webkit-animation: slide-woman-text 2s 1s;
+        animation: slide-woman-text 2s 1s;
+        animation-fill-mode: forwards;
+      }
+
+      .text {
+        opacity: 0;
+        -webkit-animation: slide-woman-white 2s 1.3s;
+        animation: slide-woman-white 2s 1.3s;
+        animation-fill-mode: forwards;
+      }
+    }
   }
 
+  //Display-woman for animation and for position
   &-man {
+    .top {
+      flex-direction: row-reverse;
+      border: solid 4rem #9b9181;
+      background: #9b9181;
+
+      img {
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
+
+      h1,
+      h3 {
+        opacity: 0;
+        animation-fill-mode: forwards;
+      }
+
+      .text {
+        background: rgba(243, 240, 233, 0.657);
+        margin: auto -3rem auto 0;
+        padding-right: 8rem;
+        text-align: right;
+
+        opacity: 0;
+        animation-fill-mode: forwards;
+
+        h1 {
+          color: #000;
+        }
+
+        h3 {
+          color: #000;
+          padding: 2rem 0 0 10%;
+          margin: 1rem 0;
+          width: 90%;
+          border-color: #9b9181;
+        }
+      }
+    }
+  }
+
+  .items-woman {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: none;
+    animation: none;
+
+    img {
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .items-man {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: none;
+    animation: none;
+
+    img {
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.items-heading {
+  font-family: "Vollkorn", serif;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto 5rem;
+  padding-bottom: 1rem;
+  border-bottom: $red 1px solid;
+}
+
+.buttons {
+  margin: 0 auto 1.5rem;
+
+  a {
+    color: #fff;
+    display: block;
+    padding: 0.7rem 0;
+    width: 65%;
+    margin: 0.5rem auto;
+    background: $red;
+    border: none;
+    text-align: center;
+    font-size: 0.9rem;
+    transition: border 0.5s ease-in-out;
+
+    @include respond(laptop) {
+      padding: 0.8rem 0;
+      font-size: 0.7rem;
+    }
+
+    &:hover {
+      background: #410c00;
+    }
+  }
+
+  #white {
+    background: #fff;
+    border: 1px solid $dark;
+    color: $dark;
+
+    &:hover {
+      background: rgb(230, 228, 228);
+    }
   }
 }

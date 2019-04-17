@@ -10,16 +10,20 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,600"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.5/fullpage.css"
     />
     <link rel="stylesheet" href="/css/style.css" />
-    <title>GASKO | Bally</title>
+    <title>BALLY</title>
   </head>
   <body>
     <!-- Loading Screen ---- to odkomentiraj ko končaš -->
-    <!-- <div class="loading">
+    <div class="loading">
       <div></div>
       <svg
         itemprop="logo"
@@ -35,7 +39,7 @@
           d="M162.399 1.191l28.538 74.083h11.076v15.801h-39.969V75.274h9.051l-5.256-14.372h-31.502l-5.308 14.4h10.582v15.801H99.268V75.274H109.8l26.628-74.083h25.971zm-23.972 44.386h22.321l-11.522-29.405-10.799 29.405zM221.3 1.2v15.6h13.4v58.5h-13.5v15.8h78.6V61.6H283v13.7h-29.6V16.8h13.4V1.2h-45.5zm100.9 0v15.6h13.4v58.5H322v15.8h78.6V61.6h-16.7v13.7h-29.6V16.8h13.3V1.2h-45.4zm86.1 0v15.7h12l29.5 43.6v14.8h-13.3v15.8h45.4V75.3h-13.6V60.4L497.2 17H510V1.2h-42.6v15.7h9.9l-17.4 28-18.3-28h9.7V1.2h-43zM0 1.191h50.4c18.452 0 30.4 10.3 30.4 23 0 13.497-7.841 19.591-15.795 21.197 8.57 1.4 19 7.7 19 21.221 0 13.565-9.986 24.505-26.576 24.5H.037V75.274h13.414V16.923H0V1.191zm31.273 15.732v20.984h20.6c7.56 0 10.394-5.716 10.394-10.974 0-4.616-4.088-10.011-11.395-10.011-7.309-.022-19.572-.022-19.572.001h-.027zm0 58.351h22c7.727 0 10.572-5.778 10.572-10.167 0-5.028-3.506-10.239-10.859-10.239H31.253v20.406h.02z"
         ></path>
       </svg>
-    </div> -->
+    </div>
     <div class="content">
       <div class="nav">
         <svg
@@ -63,7 +67,8 @@
         </div>
       </div>
       <div class="display" id="fullpage">
-        <div class="display-woman section">
+        <!-- WOMAN -->
+        <div data-anchor="woman" class="display-woman section">
           <div class="top">
             <img src="/img/W_1-A.jpg" alt="Bally model image - woman" />
             <div class="text">
@@ -77,15 +82,123 @@
               </h3>
             </div>
           </div>
-          <div class="items">
-            <div class="items-1">
-              <img src="" alt="" />
-            </div>
-            <div class="items-2"></div>
-            <div class="items-3"></div>
-          </div>
+          <div class="padding"></div>
         </div>
-        <div class="display-man section"></div>
+        <div data-anchor="woman-items" class="section">
+          <h1 class="items-heading">New Collection</h1>
+          <div class="items-woman">
+            <div class="items-1">
+              <a href="/woman/laminated-check-trench-coat/"
+                ><img
+                  src="/img/Coats_1.png"
+                  onmouseover='hover(this, "/img/Coats_2.png")'
+                  onmouseout='unhover(this, "/img/Coats_1.png")'
+              /></a>
+              <h1>Laminated Check Trench coat</h1>
+              <h3>Price: 2,000.00€</h3>
+              <div class="buttons">
+                <a id="white" href="/woman/laminated-check-trench-coat/"
+                  >View</a
+                >
+                <a href="#">Add to bag</a>
+              </div>
+            </div>
+            <div class="items-2">
+              <a href="/woman/lyla/">
+                <img
+                  src="/img/LYLA_1.png"
+                  onmouseover='hover(this, "/img/LYLA_2.png")'
+                  onmouseout='unhover(this, "/img/LYLA_1.png")'
+              /></a>
+              <h1>LYLA</h1>
+              <h3>Price: 1,395.00€</h3>
+              <div class="buttons">
+                <a id="white" href="/woman/lyla/">View</a>
+                <a href="#">Add to bag</a>
+              </div>
+            </div>
+            <div class="items-3">
+              <a href="/woman/emme/">
+                <img
+                  src="/img/EMME_1.png"
+                  onmouseover='hover(this, "/img/EMME_2.png")'
+                  onmouseout='unhover(this, "/img/EMME_1.png")'
+              /></a>
+              <h1>EMME</h1>
+              <h3>Price: 595.00€</h3>
+              <div class="buttons">
+                <a id="white" href="/woman/emme/">View</a>
+                <a href="#">Add to bag</a>
+              </div>
+            </div>
+          </div>
+          <div class="padding"></div>
+        </div>
+        <!-- MAN -->
+        <div data-anchor="man" class="display-man section">
+          <div class="top">
+            <img id="img" src="/img/M_5-A.jpg" alt="Bally model image - man" />
+            <div class="text" id="text">
+              <h1 id="h1">Men's new arrivals</h1>
+              <h3 id="h3">
+                Nouveau. Neu. Nuevo. Nuovo. No matter what way you say it,
+                Bally’s men’s new arrivals are fresh style options. From
+                luxurious designer shoes and boots to timeless and functional
+                weekend bags and wallets, browse our latest offering for instant
+                inspiration.
+              </h3>
+            </div>
+          </div>
+          <div class="padding"></div>
+        </div>
+        <div data-anchor="man-items" class="section">
+          <h1 class="items-heading">New Collection</h1>
+          <div class="items-man">
+            <div class="items-1">
+              <a href="/man/café-racer-biker-jacket/"
+                ><img
+                  src="/img/Jackets_1.png"
+                  onmouseover='hover(this, "/img/Jackets_2.png")'
+                  onmouseout='unhover(this, "/img/Jackets_1.png")'
+              /></a>
+              <h1>CAFÉ RACER BIKER JACKET</h1>
+              <h3>Price: 1,400.00€</h3>
+              <div class="buttons">
+                <a id="white" href="/man/café-racer-biker-jacket/">View</a>
+                <a href="#">Add to bag</a>
+              </div>
+            </div>
+            <div class="items-2">
+              <a href="/man/sarkis/">
+                <img
+                  src="/img/SARKIS_1.png"
+                  onmouseover='hover(this, "/img/SARKIS_3.png")'
+                  onmouseout='unhover(this, "/img/SARKIS_1.png")'
+              /></a>
+              <h1>SARKIS</h1>
+              <h3>Price: 575.00€</h3>
+              <div class="buttons">
+                <a id="white" href="/man/sarkis/">View</a>
+                <a href="#">Add to bag</a>
+              </div>
+            </div>
+            <div class="items-3">
+              <a href="/man/gasko/">
+                <img
+                  src="/img/Trainers_GASKO_007D.png"
+                  onmouseover='hover(this, "/img/Trainers_GASKO_007F.png")'
+                  onmouseout='unhover(this, "/img/Trainers_GASKO_007D.png")'
+              /></a>
+              <h1>GASKO</h1>
+              <h3>Price: 395.00€</h3>
+              <div class="buttons">
+                <a id="white" href="/man/gasko/">View</a>
+                <a href="#">Add to bag</a>
+              </div>
+            </div>
+          </div>
+          <div class="padding"></div>
+        </div>
       </div>
     </div>
     <script

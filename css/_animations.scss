@@ -1,3 +1,4 @@
+//Animations for loading screen
 @-webkit-keyframes slide-top {
   0% {
     top: 100%;
@@ -12,7 +13,6 @@
     opacity: 0;
   }
 }
-
 @keyframes slide-top {
   0% {
     top: 100%;
@@ -27,7 +27,6 @@
     opacity: 0;
   }
 }
-
 @-webkit-keyframes slide-top-logo {
   0% {
     top: 100%;
@@ -42,7 +41,6 @@
     opacity: 0;
   }
 }
-
 @keyframes slide-top-logo {
   0% {
     top: 100%;
@@ -55,5 +53,151 @@
 
   100% {
     opacity: 0;
+  }
+}
+
+// Animations for women section
+@keyframes slide-woman-image {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-woman-image {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-woman-text {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-woman-text {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-woman-white {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-woman-white {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// Animations for items
+@keyframes slide-items {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-items {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// Animations for man section
+@keyframes slide-man-image {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-man-image {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-man-text {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-man-text {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-man-white {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-woman-white {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
